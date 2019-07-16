@@ -53,7 +53,6 @@ function App() {
     newTodos[i].content = e.target.value;
     setTodos(newTodos);
   }
-
   function removeTodoAtIndex(i) {
     if (i === 0 && todos.length === 1) return;
     
@@ -63,6 +62,7 @@ function App() {
     },0);
   }
 
+  
   function toggleTodoCompleteAtIndex(index) {
     const temporaryTodos = [...todos];
     temporaryTodos[index].isCompleted = !temporaryTodos[index].isCompleted;
